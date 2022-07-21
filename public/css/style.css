@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: bisque;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.header__logo {
+  width: 170px;
+  margin: 5%;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+}
+
+.location__text {
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=style.css.map */

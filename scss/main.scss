@@ -1,1 +1,35 @@
 @import "./utils/variables";
+
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  body{
+    background-color: bisque
+  }
+
+  #container{
+  }
+
+  header{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+  }
+
+  .header__logo{
+    width: 170px;
+    margin: 5%;
+  }
+
+  .location{
+    display: flex;
+    justify-content: center;
+  }
+
+  .location__text{
+    font-weight: 600;
+  }
