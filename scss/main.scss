@@ -8,28 +8,73 @@
   }
 
   body{
-    background-color: bisque
-  }
-
-  #container{
+    font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
   }
 
   header{
     display: flex;
-    justify-content: center;
-    background-color: white;
+    justify-content: center; 
   }
 
   .header__logo{
     width: 170px;
-    margin: 5%;
+    margin: 25px 0 15px 0;
   }
 
   .location{
     display: flex;
     justify-content: center;
+    align-items: center;
+    color: #353535;
+    height: 50px;
+    background-color: #EAEAEA;    
+    
   }
 
   .location__text{
-    font-weight: 600;
+    font-weight: 700;
+  }
+
+  .location__icon{
+    position: relative;
+    right: 20px;
+    bottom: 3px;
+    font-size: 17px;
+  }
+
+  .footer__logo{
+    width: 170px;
+    margin: 5%;
+  }
+
+  .intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    background-color: #F6F6F6;
+    text-align: center;
+  }
+
+  .intro__h1{
+    font-weight: 700;
+  }
+
+  .intro__text{
+    color: #656565;
+    font-size: 18px;
+  }
+
+  .intro__btn{
+    width: 200px;
+    height: 50px;
+    color: white;
+    background: linear-gradient(to bottom right, $secondary, $primary);
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    font-family: roboto;
   }
