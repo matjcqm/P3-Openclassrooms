@@ -25,7 +25,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #353535;
+    color: #494949;
     height: 50px;
     background-color: #EAEAEA;
   }
@@ -42,8 +42,8 @@
   }
 
   .footer__logo{
-    width: 170px;
-    margin: 5%;
+    width: 100px;
+    margin-bottom: 20px;
   }
 
   .intro{
@@ -56,7 +56,7 @@
     text-align: center;
   }
 
-  .intro__h1{
+  .body__h1{
     font-weight: 900;
   }
 
@@ -66,7 +66,7 @@
   }
 
   .intro__btn{
-    width: 200px;
+    width: 220px;
     height: 50px;
     color: white;
     background: linear-gradient(to bottom right, $secondary, $primary);
@@ -84,7 +84,8 @@
 
   .body__h2{
     font-weight: 900;
-    margin-left: 20px;
+    margin-left: 24px;
+    margin-bottom: 20px;
   }
 
   #process__menu{
@@ -136,14 +137,16 @@
 
   .process{
     margin: 40px 0px;
+    padding-bottom: 30px;
   }
 
-  .restaurants{
+  #restaurant{
     background-color: #F6F6F6;
     padding-top: 50px;
+    padding-bottom: 70px;
   }
 
-  .restaurants__list{
+  .restaurant__list{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -152,14 +155,90 @@
 
   .restaurant__card{
     width: 340px;
+    height: 250px;
     background-color: white;
-    border-radius: 25px;
+    border-radius: 20px;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
   }
 
   .restaurant__img{
     width: 100%;
-    height: 200px;
+    height: 170px;
     object-fit: cover;
-    border-radius: 25px 25px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
+  }
+
+  .body__h3{
+    margin-left: 15px;
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: 900;
+  }
+
+  .restaurant__text{
+    margin-left: 15px;
+    margin-top: 4px;
+    font-size: 17px;
+  }
+
+  .restaurant__new{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 210px;
+    left: 240px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #99E2D0;
+    color: #008766;
+    height: 30px;
+    width: 85px;
+  }
+
+  .restaurant__heart{
+    z-index: 0;
+    font-size: 24px;
+    position: relative;
+    left: 250px;
+    bottom: 40px;
+    transition: all 400ms;
+    cursor: pointer;
+    &:hover{
+      color: rgb(82, 82, 82);
+    }
+    &:active + .restaurant__heartlike{
+      display: block;
+    }
+  }
+
+  .restaurant__heartlike{
+    display: none;
+    font-size: 24px;
+    position: relative;
+    left: 277px;
+    bottom: 40px;
+    color: $secondary;
+    z-index: 1;
+  }
+
+  footer{
+    background-color: #353535;
+    color: white;
+    padding: 30px;  
+  }
+
+  .footer__list{
+    display: grid;
+    row-gap: 8px; 
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 400;
+    column-gap: 30px;
+  }
+
+  .footer__icon{
+    font-size: 12px;
+    width: 20px;
+    margin-right: 6px;
   }
