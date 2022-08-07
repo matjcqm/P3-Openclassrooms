@@ -11,11 +11,17 @@ body {
 header {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .header__logo {
   width: 170px;
   margin: 25px 0 15px 0;
+}
+
+.header__arrow {
+  position: relative;
+  right: 60px;
 }
 
 .location {
@@ -48,18 +54,20 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  padding: 40px;
+  padding: 40px 20px 55px 20px;
   background-color: #F6F6F6;
   text-align: center;
 }
 
 .body__h1 {
   font-weight: 900;
+  width: 80%;
 }
 
 .intro__text {
   color: #656565;
   font-size: 18px;
+  width: 100%;
 }
 
 .intro__btn {
@@ -155,6 +163,8 @@ header {
   background-color: white;
   border-radius: 20px;
   box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  color: black;
 }
 
 .restaurant__img {
@@ -162,6 +172,11 @@ header {
   height: 170px;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
+  object-position: 0% 100%;
+}
+
+#lanote-img {
+  object-position: 0% 62%;
 }
 
 .body__h3 {
@@ -237,6 +252,10 @@ footer {
   font-size: 12px;
   width: 20px;
   margin-right: 6px;
+}
+
+.menu__img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
