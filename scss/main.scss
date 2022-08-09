@@ -11,20 +11,18 @@
     font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
   }
 
-  header{
+  .header{
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .header__logo{
-    width: 170px;
-    margin: 25px 0 15px 0;
-  }
-
-  .header__arrow{
-    position: relative;
-    right: 60px;
+    &__logo{
+      width: 170px;
+      margin: 25px 0 15px 0;
+    }
+    &__arrow{
+      position: relative;
+      right: 60px;
+    }
   }
 
   .location{
@@ -34,18 +32,17 @@
     color: #494949;
     height: 50px;
     background-color: #EAEAEA;
+    &__text{
+      font-weight: 700;
+    }
+    &__icon{
+      position: relative;
+      right: 20px;
+      bottom: 3px;
+      font-size: 17px;
+    }
   }
 
-  .location__text{
-    font-weight: 700;
-  }
-
-  .location__icon{
-    position: relative;
-    right: 20px;
-    bottom: 3px;
-    font-size: 17px;
-  }
 
   .footer__logo{
     width: 100px;
@@ -60,34 +57,31 @@
     padding: 40px 20px 55px 20px;
     background-color: #F6F6F6;
     text-align: center;
+    &__text{
+      color: #656565;
+      font-size: 18px;
+      width: 100%;
+    }
+    &__btn{
+      width: 220px;
+      height: 50px;
+      color: white;
+      background: linear-gradient(to bottom right, $secondary, $primary);
+      border-radius: 25px;
+      border: none;
+      font-size: 16px;
+      font-weight: 400;
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+      font-family: roboto;
+      &:hover{
+        background: linear-gradient(to bottom right, $primary, $secondary);
+      }
+    }
   }
 
   .body__h1{
     font-weight: 900;
     width: 80%;
-  }
-
-  .intro__text{
-    color: #656565;
-    font-size: 18px;
-    width: 100%;
-  }
-
-  .intro__btn{
-    width: 220px;
-    height: 50px;
-    color: white;
-    background: linear-gradient(to bottom right, $secondary, $primary);
-    border-radius: 25px;
-    border: none;
-    font-size: 16px;
-    font-weight: 400;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-    font-family: roboto;
-  }
-
-  .intro__btn:hover{
-    background: linear-gradient(to bottom right, $primary, $secondary);
   }
 
   .body__h2{
@@ -265,4 +259,74 @@
 
   .menu__img{
     width: 100%;
+  }
+
+  .menu{
+    background-color: #F6F6F6;
+    border-radius: 30px 40px 0px 0px;
+    position: relative;
+    bottom: 55px;
+    padding: 30px 20px ;
+    height: auto;
+    margin-bottom: -55px;
+  }
+
+  .menu__h1{
+    font-family: Shrikhand;
+    font-size: 30px;
+    font-weight:lighter
+  }
+
+  .menu__h2{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 30px;
+  }
+
+  .menu__underline{
+    width: 40px;
+    border-top: 3px solid #99e2d0;
+    margin: 5px 0px 15px 0px;
+  }
+
+  .menu__box{
+    display: grid;
+    row-gap: 15px;
+    margin-bottom: 10px;    
+  }
+  
+  .menu__card{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+    padding: 13px 20px 10px 10px;
+    display: grid;
+    row-gap: 4px;
+  }
+
+  .menu__line{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu__price{
+    font-size: 15px;
+    font-weight: 800;
+    color: #353535;
+  }
+
+  .menu__info{
+    font-weight: 00;
+    font-size: 15px;
+  }
+
+  .menu__h3{
+    font-size: 18px;
+  }
+
+  .menu__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 80px 50px 80px;
   }
