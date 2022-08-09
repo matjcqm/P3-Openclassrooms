@@ -1,0 +1,22 @@
+.footer {
+    background-color: #353535;
+    color: white;
+    padding: 30px;
+    &__list {
+      display: grid;
+      row-gap: 8px;
+      list-style-type: none;
+      font-size: 16px;
+      font-weight: 400;
+      column-gap: 30px;
+    }
+    &__icon {
+      font-size: 12px;
+      width: 20px;
+      margin-right: 6px;
+    }
+    &__logo {
+      width: 100px;
+      margin-bottom: 20px;
+    }
+  }

@@ -1,0 +1,60 @@
+.menu {
+    background-color: $background;
+    border-radius: 30px 40px 0px 0px;
+    position: relative;
+    bottom: 55px;
+    padding: 30px 20px;
+    height: auto;
+    margin-bottom: -55px;
+    &__img {
+      width: 100%;
+    }
+    &__h1 {
+      font-family: Shrikhand;
+      font-size: 30px;
+      font-weight: lighter;
+    }
+    &__h2 {
+      font-size: 16px;
+      font-weight: 400;
+      margin-top: 30px;
+    }
+    &__h3 {
+      font-size: 18px;
+    }
+    &__underline {
+      width: 40px;
+      border-top: 3px solid $tertiary;
+      margin: 5px 0px 15px 0px;
+    }
+    &__box {
+      display: grid;
+      row-gap: 15px;
+      margin-bottom: 10px;
+    }
+    &__card {
+      background-color: white;
+      border-radius: 15px;
+      @include boxshadow;
+      padding: 13px 20px 10px 10px;
+      display: grid;
+      row-gap: 4px;
+    }
+    &__line {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__price {
+      font-size: 15px;
+      font-weight: 800;
+      color: #353535;
+    }
+    &__info {
+      font-weight: 00;
+      font-size: 15px;
+    }
+    &__btn {
+      @include flexcenter;
+      margin: 50px 80px 50px 80px;
+    }
+  }
