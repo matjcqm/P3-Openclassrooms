@@ -4,14 +4,31 @@
 @import "./pages/menu";
 @import "./layouts/header";
 @import "./layouts/footer";
+@import "./utils/bp";
+
+
+
+main{
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 3;
+}
 
 .location {
+  z-index: 4;
   @include flexcenter;
   color: #494949;
   height: 50px;
   background-color: #eaeaea;
+  @include tablet{
+    font-size: 18px;
+  }
   &__text {
     font-weight: 700;
+    @include tablet{
+      font-size: 18px;
+    }
   }
   &__icon {
     position: relative;
@@ -28,19 +45,22 @@
   padding: 40px 20px 55px 20px;
   background-color: $background;
   text-align: center;
+  @include desktop{
+    border-radius: 0px 0px 25px 25px;
+  }
   &__text {
     color: #656565;
     font-size: 18px;
     width: 100%;
   }
   &__btn {
-    width: 220px;
+    width: 240px;
     height: 50px;
     color: white;
     background: linear-gradient(to bottom right, $secondary, $primary);
     border-radius: 25px;
     border: none;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
     font-family: roboto;
@@ -53,6 +73,12 @@
 .process {
   margin: 40px 0px;
   padding-bottom: 30px;
+  &__menu{
+    @include tablet{
+      @include flexcenter;
+      flex-direction: column;
+    }
+  }
   &__box {
     display: flex;
     background-color: $background;
@@ -60,9 +86,14 @@
     border-radius: 20px;
     padding: 27px;
     column-gap: 20px;
+    max-width: 420px;
     @include boxshadow;
     font-weight: 700;
     font-size: 16px;
+    @include tablet{
+      @include flexcenter;
+      width: 420px;
+    }
     &:hover {
       background-color: #f5edff;
       transition: ease 0.5s;
@@ -82,6 +113,10 @@
     height: 24px;
     width: 24px;
     font-size: 14px;
+    @include tablet{
+     top: 12px;
+     left: 0px;
+    }
   }
   &__icon {
     color: gray;
@@ -104,10 +139,17 @@
   background-color: $background;
   padding-top: 50px;
   padding-bottom: 70px;
+  @include desktop{
+    border-radius: 25px 25px 0px 0px;
+  }
   &__list {
     @include flexcenter;
-    flex-direction: column;
+    flex-wrap: wrap;
+    column-gap: 20px;
     row-gap: 20px;
+    @include desktop{
+      padding: 0px 40px;
+    }
   }
   &__card {
     width: 340px;
@@ -117,6 +159,10 @@
     @include boxshadow;
     text-decoration: none;
     color: black;
+    @include desktop{
+      width: 400px;
+      margin: 20px;
+    }
   }
   &__img {
     width: 100%;
@@ -141,6 +187,9 @@
     color: #008766;
     height: 30px;
     width: 85px;
+    @include desktop{
+      left: 300px;
+    }
   }
   &__heart {
     z-index: 0;
