@@ -5,6 +5,7 @@
 @import "./layouts/header";
 @import "./layouts/footer";
 @import "./utils/bp";
+@import "./components/loader";
 
 
 
@@ -199,10 +200,7 @@ main{
     bottom: 40px;
     transition: all 400ms;
     cursor: pointer;
-    &:hover {
-      color: #525252;
-    }
-    &:active + .restaurant__heartlike {
+    &:hover + .restaurant__heartlike {
       display: block;
     }
   }
