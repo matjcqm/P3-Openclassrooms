@@ -10,6 +10,7 @@
       margin-bottom: 20px;
       @include desktop{
         margin: 0px 100px 0px 0px;
+        width: 120px;
       }
     }
     &__list {
