@@ -28,7 +28,7 @@
 
         <!-- header -->
         <header class="header">
-            <i class="fa-solid fa-arrow-left header__arrow"></i>
+            <a class="main__link" href="/index.html"><i class="fa-solid fa-arrow-left header__arrow"></i></a>
             <img src="/img/ohmyfood.png" alt="logo ohmyfood" class="header__logo">
         </header>
 
@@ -38,9 +38,13 @@
 
             <!-- menu -->
             <div class="menu">
-                <h1 class="menu__h1">À la française</h1>
-                <!-- <i class="fa-regular fa-heart restaurant__heart"></i>
-                <i class="fa-solid fa-heart restaurant__heartlike"></i> -->
+                <div class="menu__intro">
+                    <h1 class="menu__h1">À la française</h1>
+                    <div class="restaurant__heartgroup">
+                        <i class="fa-regular fa-heart restaurant__heart"></i>
+                        <i class="fa-solid fa-heart restaurant__heartlike"></i>
+                    </div>
+                </div>
 
                 <!-- entrées -->
                 <section class="menu__entrées">
@@ -131,7 +135,7 @@
 
                 <!-- button -->
                 <div class="menu__btn">
-                <input type="button" value="Commander" class="intro__btn">
+                    <input type="button" value="Commander" class="intro__btn">
                 </div>
             </div>
         </main>
