@@ -85,10 +85,9 @@
     font-size: 18px;
     font-weight: 400;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-    font-family: roboto;
     text-decoration: none;
-    &:hover {
-      background: linear-gradient(to bottom right, $primary, $secondary);
+    &:hover{
+      background-color: linear-gradient(to bottom right, #FFA3E6, #B694DC);
     }
     // &:hover::after{
     //   content: "";

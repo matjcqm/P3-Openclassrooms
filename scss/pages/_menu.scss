@@ -59,9 +59,9 @@
     row-gap: 5px;
     animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     min-width: 10%;
-    @for $i from 1 through 3 {
+    @for $i from 1 through 4 {
       &:nth-child(#{$i}) {
-        animation-delay: 1s / 3 * $i;
+        animation-delay: 1s / 4 * $i;
       }
     }
     &:hover .menu__checkbox{
@@ -91,7 +91,6 @@
   }
 
   &__info {
-    font-weight: 00;
     font-size: 15px;
     text-overflow: ellipsis;
     white-space: nowrap;

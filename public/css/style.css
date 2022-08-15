@@ -67,14 +67,18 @@ body {
   min-width: 10%;
 }
 .menu__card:nth-child(1) {
-  -webkit-animation-delay: 0.3333333333s;
-          animation-delay: 0.3333333333s;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
 }
 .menu__card:nth-child(2) {
-  -webkit-animation-delay: 0.6666666667s;
-          animation-delay: 0.6666666667s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 .menu__card:nth-child(3) {
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+.menu__card:nth-child(4) {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
@@ -104,7 +108,6 @@ body {
   padding: 0 15px;
 }
 .menu__info {
-  font-weight: 0;
   font-size: 15px;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -205,6 +208,11 @@ body {
   font-size: 12px;
   width: 20px;
   margin-right: 6px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
 }
 
 @-webkit-keyframes rotation {
@@ -437,11 +445,10 @@ body {
   font-size: 18px;
   font-weight: 400;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-  font-family: roboto;
   text-decoration: none;
 }
 .intro__btn:hover {
-  background: linear-gradient(to bottom right, #9356DC, #FF79DA);
+  background-color: linear-gradient(to bottom right, #FFA3E6, #B694DC);
 }
 
 .process {
