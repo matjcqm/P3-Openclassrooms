@@ -6,14 +6,30 @@
 @import "./layouts/footer";
 @import "./utils/bp";
 @import "./components/loader";
+@import "./components/heart";
 
 
 
-main{
+.main{
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
   z-index: 3;
+  &__h1 {
+    font-weight: 900;
+    width: 80%;
+  }
+  &__h2 {
+    font-weight: 900;
+    margin-left: 24px;
+    margin-bottom: 20px;
+  }
+  &__h3 {
+    margin-left: 15px;
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: 900;
+  }
 }
 
 .location {
@@ -125,17 +141,6 @@ main{
   }
 }
 
-.body__h1 {
-  font-weight: 900;
-  width: 80%;
-}
-
-.body__h2 {
-  font-weight: 900;
-  margin-left: 24px;
-  margin-bottom: 20px;
-}
-
 .restaurant {
   background-color: $background;
   padding-top: 50px;
@@ -165,12 +170,19 @@ main{
       margin: 20px;
     }
   }
+  &__description{
+    display: flex;
+    justify-content: space-between;
+  }
   &__img {
     width: 100%;
     height: 170px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
     object-position: 0% 100%;
+    @include desktop{
+      // height: 200px;
+    }
   }
   &__text {
     margin-left: 15px;
@@ -192,36 +204,11 @@ main{
       left: 300px;
     }
   }
-  &__heart {
-    z-index: 0;
-    font-size: 24px;
-    position: relative;
-    left: 250px;
-    bottom: 40px;
-    transition: all 400ms;
-    cursor: pointer;
-    &:hover + .restaurant__heartlike {
-      display: block;
-    }
-  }
-  &__heartlike {
-    display: none;
-    font-size: 24px;
-    position: relative;
-    left: 277px;
-    bottom: 40px;
-    color: $secondary;
-    z-index: 1;
+  &__link{
+    text-decoration: none;
   }
 }
 
 #lanote-img {
   object-position: 0% 62%;
-}
-
-.body__h3 {
-  margin-left: 15px;
-  margin-top: 12px;
-  font-size: 18px;
-  font-weight: 900;
 }
