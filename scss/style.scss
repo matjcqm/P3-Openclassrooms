@@ -86,13 +86,11 @@
     font-weight: 400;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
     text-decoration: none;
+    transition: ease-in-out 0.3s;
     &:hover{
-      background-color: linear-gradient(to bottom right, #FFA3E6, #B694DC);
+      transform: scale(1.05);
+      background: linear-gradient(to bottom right, #FFB2E8, #A888DC);
     }
-    // &:hover::after{
-    //   content: "";
-    //   background-color: black;
-    // }
   }
 }
 
@@ -174,13 +172,14 @@
     @include boxshadow;
     text-decoration: none;
     color: black;
+    transition: ease 0.4s;
     @include desktop{
       width: 400px;
       margin: 20px;
     }
     &:hover{
       transform: scale(1.05);
-      transition: ease 0.4s;
+      
       @include desktop{
         transform: scale(1.15);
       }
